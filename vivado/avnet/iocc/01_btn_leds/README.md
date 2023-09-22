@@ -90,4 +90,4 @@ and click `Create Block Design`
 
 A significant advantage of using board files is that most board-specific configurations for the processor subsystem can be automated.
 
-- first, clock on `Run Block Automation` in the `Diagram` pane
+- first, click on `Run Block Automation` in the `Diagram` pane to open the block automation dialog box
