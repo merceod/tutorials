@@ -1,5 +1,13 @@
 # Tutorial : Buttons and LEDs
 
+In this tutorial, we are going to create a Vivado design containing the following:
+- AXI Timer
+- LEDs
+- Push Buttons
+- 200MHz design clock
+
+The targeted board is the Avnet IO Carrier Card + UltraZed SOM
+
 ## Prerequisites
 
 1. Vivado 2022.1 accessible
