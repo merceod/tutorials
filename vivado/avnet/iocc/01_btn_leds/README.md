@@ -7,6 +7,15 @@
 
 ### 1. Launch Vivado
 
+If launching from the command line, Vivado can be launched as follows:
+```sh
+bash> vivado &> /dev/null &
+```
+
+The above command assumes BASH shell is used.
+- Both normal output and errors are redirected to /dev/null
+- Vivado is run in the background
+
 ![Vivado Launch](./images/00_vivado_launch.png)
 
 ### 2. Set Path for Board Files
@@ -18,6 +27,9 @@ set_param board.repoPaths {REPO_PATH}
 ```
 
 Enter the Tcl command above (with REPO_PATH substituted for the real directory path) and press ENTER.
+
+> Note:
+> Setting the repo path is usually done once. There is no need to reset the repo path every time Vivado is used unless the intent is to change it.
 
 ![](./images/01_vivado_Board_Repo_Paths.png)
 
@@ -60,7 +72,7 @@ On the new window screen,
 
 ### 7. Create a Block Design
 
-- on the left side of the window (in the `Flow Navigator` pane), go to `IP INTEGRATOR`
+- on the left side of the main window (in the `Flow Navigator` pane), go to `IP INTEGRATOR`
 and click `Create Block Design`
 - then, on the `Create Block Design` window that opens:
     - change Design name to `system` (the name `system` isn't special. It's just our choice)
@@ -68,23 +80,23 @@ and click `Create Block Design`
     - leave `Specify source set` to `Design Sources`
     - click `OK`
 
-![](./images/07_Create_Block_Design.png)
+![](./images/07_0_Create_Block_Design.png)
 
-- wait for the block design to be created. Then, the following blank design should be ready
+- wait for the block design to be created. Then, a blank block design (like the one shown below) is created.
 
-![](./images/07_Blank_Block_Design.png)
+![](./images/07_1_Blank_Block_Design.png)
 
 ### 8. Add the ZynqMP Processor Subsystem
 
-- click on the `+` button in the toolbar within the `Diagram` pane to open the search pane for the IP Integrator
+- click on the ![Add IP](./images/symbols_add_IP.png) button in the toolbar within the `Diagram` pane to open the search pane for the IP Integrator
 - type `zynq` in the search box
-- double-click on `Zynq UltraScale+ MPSoC` to add the ZynqMP to the block design
+- double-click on `Zynq UltraScale+ MPSoC` to add ZynqUltraScale+ processor subsystem to the block design
 
-![](./images/08_Add_ZynqMP.png)
+![](./images/08_0_Add_ZynqMP.png)
 
-- the ZynqMP processor subsystem should now be added to the block design as shown in the picture below:
+- the ZynqUltraScale+ processor subsystem should now be added to the block design as shown in the picture below:
 
-![](./images/08_ZynqMP_Added.png)
+![](./images/08_1_ZynqMP_Added.png)
 
 ### 9. Configure ZynqMP Processor Subsystem
 
