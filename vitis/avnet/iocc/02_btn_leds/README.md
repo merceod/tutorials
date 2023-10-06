@@ -12,7 +12,7 @@ Write a software application that accomplishes the following:
 - turn on each of the following LED one at a time in the order listed: D7, D8, D11, D12, D13, D14, D16, and D17
 - once all LEDs are turned ON, turn them off at the next timer tick and then repeat the pattern again
 - use pushbutton `SW1` to decrease the tick period by 250ms (minimum tick period = 250ms)
-- use pushbutton `SW2` to increase the tick period by 250ms (minimum tick period = 2s)
+- use pushbutton `SW2` to increase the tick period by 250ms (maximum tick period = 2s)
 - every time a button push event occurs (either `SW1` or `SW2`), print a small message with information about which button is pressed to the console (using `xil_printf`)
 
 > Note: Debounce the pushbuttons such that a PUSH-RELEASE sequence counts as 1 push event (independent of how long the button is pressed)
