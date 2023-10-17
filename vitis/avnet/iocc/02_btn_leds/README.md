@@ -27,7 +27,7 @@ This section provides a few hints/notes/links that can help solve the assigned p
 Many Xilinx IP such as the GPIO and AXI Timer come with baremetal (standalone) drivers and examples on how they can be used.
 
 - for GPIO, browse the following links:
-    - examples: https://github.com/gednyengs/tutorials/tree/main/vitis/avnet/iocc/01_btn_leds
+    - examples: https://github.com/Xilinx/embeddedsw/tree/master/XilinxProcessorIPLib/drivers/gpiops/examples
     - driver source code: https://github.com/Xilinx/embeddedsw/tree/master/XilinxProcessorIPLib/drivers/gpiops/src
 - for AXI Timer, browse the following links:
     - examples: https://github.com/Xilinx/embeddedsw/tree/master/XilinxProcessorIPLib/drivers/tmrctr/examples
