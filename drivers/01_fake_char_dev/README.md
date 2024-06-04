@@ -40,9 +40,9 @@ permissions of the device file. Follow the steps below to check:
    ```
 
 2. If the permissions are not the same as shown above, run the following to modify the permissions:
-  ```
-  sudo chmod 666 /dev/fake_char_dev0
-  ```
+   ```
+   sudo chmod 666 /dev/fake_char_dev0
+   ```
 
 ## Overview
 
