@@ -7,7 +7,7 @@
 2. Then run the following to load the module. Now you should see fake_char_dev0 appear in the /dev folder
    and dev_class appear in /sys/class
    ```
-   sudo insmod fake_char_dev.ko"
+   sudo insmod fake_char_dev.ko
    ```
    
 3. Now, compile the example usage file as follows:
